@@ -1,0 +1,26 @@
+# Whitelist approach: ignore everything, then let back in only what should be tracked.
+# Git applies these rules top to bottom, and the LAST rule that matches a path wins.
+
+# 1. Ignore everything
+*
+
+# 2. Let git look inside folders.
+#    Files inside them are still ignored unless a rule below lets them back in.
+!*/
+
+# 3. Files to track
+!.gitignore
+!.python-version
+!pyproject.toml
+!uv.lock
+!README.md
+!*.py
+
+# Optional: uncomment to track saved figures too
+# !plots/*.png
+
+# 4. Folders that must never be tracked.
+#    These come last so they override rules 2 and 3.
+#    Without this, the .py rule would pull in every Python file inside .venv.
+.venv/
+__pycache__/

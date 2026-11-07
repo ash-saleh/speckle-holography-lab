@@ -1,0 +1,22 @@
+[project]
+name = "speckle"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ash-saleh", email = "ash.ccru6@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+    "pillow>=13.0.0",
+    "pyqt6>=6.12.0",
+]
+
+[project.scripts]
+project = "project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
