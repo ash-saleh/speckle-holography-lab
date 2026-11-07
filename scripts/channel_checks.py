@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from speckle.image_io import get_image_array
+from speckle.image_io import load_image
 
-pro_image = get_image_array("../data/test2.bmp")
+pro_image = load_image("../data/test2.bmp")
 
 print(pro_image.shape)
 
