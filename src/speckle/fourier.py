@@ -18,3 +18,20 @@ def frequency_axes(
     freq_x = np.fft.fftfreq(shape[1], d=pixel_pitch)
     freq_y = np.fft.fftfreq(shape[0], d=pixel_pitch)
     return np.fft.fftshift(freq_x), np.fft.fftshift(freq_y)
+
+
+def radial_average(
+    magnitude: np.ndarray, freq_x: np.ndarray, freq_y: np.ndarray
+) -> tuple[np.ndarray, np.ndarray]:
+    fx, fy = np.meshgrid(freq_x, freq_y)
+    r = np.sqrt(fx**2 + fy**2)
+    spacing_y = freq_y[1] - freq_y[0]
+    spacing_x = freq_x[1] - freq_x[0]
+    spacing = max(spacing_x, spacing_y)
+    ring = np.floor(r / spacing).astype(int)
+    sums = np.bincount(ring.ravel(), weights=magnitude.ravel())
+    counts = np.bincount(ring.ravel())
+    averages = sums / counts
+    k_vals = np.arange(len(averages))
+    radii = (k_vals + 0.5) * spacing
+    return (radii, averages)
