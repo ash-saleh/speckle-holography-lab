@@ -1,7 +1,7 @@
 [project]
 name = "speckle"
 version = "0.1.0"
-description = "Add your description here"
+description = "Image Processing for Speckle Holography"
 readme = "README.md"
 authors = [
     { name = "ash-saleh", email = "ash.ccru6@gmail.com" }
@@ -13,9 +13,6 @@ dependencies = [
     "pillow>=13.0.0",
     "pyqt6>=6.12.0",
 ]
-
-[project.scripts]
-project = "project:main"
 
 [build-system]
 requires = ["uv_build>=0.12.22,<0.13.0"]
