@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import LogNorm
 
-from speckle.fourier import fourier_magnitude, frequency_axes, radial_average
+from speckle.fourier import find_edge, fourier_magnitude, frequency_axes, radial_average
 from speckle.image_io import load_gray
 
 image = load_gray("data/test2.bmp")
@@ -39,4 +39,6 @@ ax.axvline(x=0.065, label="x=0.065")
 ax.set_xlim((0, 0.5))
 ax.legend()
 
-plt.show()
+print(find_edge(distances, averages))
+
+# plt.show()
