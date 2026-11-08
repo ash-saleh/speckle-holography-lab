@@ -75,19 +75,36 @@ uv run tests/<name>.py
 
 Images are not tracked by git, because they are large and never change. They are shared separately at: <!-- link to the shared folder -->
 
-Each lab session gets its own folder, named by date, with a notes file:
+Each lab session gets its own folder, named by date:
 
 ```
 data/
 └── 2026-11-10/
+    ├── images.csv
     ├── notes.md
     └── *.bmp
 ```
 
-`notes.md` records:
+`images.csv` and `notes.md` are tracked by git; the images are not.
 
-- **Once per session:** camera model, pixel format, exposure, gain, white balance, wavelength λ, block-to-camera distance *L*, and the dark-frame filename
-- **For each image:** filename, iris setting, magnification, aperture-to-lens and lens-to-block distances, spot diameter *D*, and anything changed
+**`images.csv`** has one row per image:
+
+| Column | Meaning |
+|---|---|
+| `filename` | image file in this folder |
+| `repeat` | repeat number at the same settings |
+| `iris_mm` | iris setting (mm) |
+| `magnification` | magnification of the aperture image on the block |
+| `aperture_to_lens_mm` | aperture-to-lens distance (mm) |
+| `lens_to_block_mm` | lens-to-block distance (mm) |
+| `spot_measured_mm` | spot diameter measured on the block (mm) |
+| `exposure_ms` | camera exposure (ms) |
+| `gain` | camera gain |
+| `notes` | anything else; wrap in double quotes if it contains a comma |
+
+**`notes.md`** records what stays the same for the whole session: camera model, pixel format, white balance, wavelength λ, block-to-camera distance *L*, and the dark-frame filename, plus free-text observations.
+
+Records for each lab week are added on a branch named for that week (e.g. `week2`) and merged once checked.
 
 ## Camera notes
 

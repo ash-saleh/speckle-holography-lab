@@ -1,0 +1,4 @@
+filename,repeat,iris_mm,magnification,aperture_to_lens_mm,lens_to_block_mm,spot_measured_mm,exposure_ms,gain,notes
+iris3_m1_r1.bmp,1,3,1,200,200,3.0,10,0,
+iris3_m1_r2.bmp,2,3,1,200,200,3.0,10,0,block nudged
+iris3_m05_r1.bmp,1,3,0.5,300,150,1.5,20,0,"refocused, graph paper sharp"

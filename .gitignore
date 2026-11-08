@@ -15,6 +15,8 @@
 !uv.lock
 !README.md
 !*.py
+!data/*/*.csv
+!data/*/*.md
 
 # Optional: uncomment to track saved figures too
 # !plots/*.png
