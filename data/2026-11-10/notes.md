@@ -5,10 +5,10 @@ Preliminary experiment: speckle size against spot diameter D. Images listed in `
 
 - **Laser:** Thorlabs HNLS008R-EC HeNe, λ = 632.8 nm
 - **Camera:** The Imaging Source DMK 42BUC03 (mono, Aptina MT9M021 sensor, 3.75 µm square pixels)
-- **Pixel format:** Y800 (8-bit mono), [1280 × 960 — confirm]
+- **Pixel format:** Y800 (8-bit mono), 1280 × 960
 - **Auto exposure / auto gain:** off; set by hand for each setting (values in `images.csv`)
-- **White balance:** [auto / off]. No effect: mono camera, single channel.
-- **Block-to-sensor distance L:** 190 ± [fill in] mm. Block and camera not moved all session.
+- **White balance:** off No effect: mono camera, single channel.
+- **Block-to-sensor distance L:** 190 ± 0.5 mm. Block and camera not moved all session.
 - **Light-shielding tube:** fitted between block and camera
 
 ## Optics
