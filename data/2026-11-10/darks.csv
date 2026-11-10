@@ -1,30 +1,30 @@
 filename,repeat,exposure_ms,gain,notes
-dark_g119_e30_r1, 1, 1/30, 119
-dark_g119_e30_r2, 2, 1/30, 119
-dark_g119_e30_r3, 3, 1/30, 119
-dark_g175_e30_r1, 1, 1/30, 175
-dark_g175_e30_r2, 2, 1/30, 175
-dark_g175_e30_r3, 3, 1/30, 175
-dark_g34_e44_r1, 1, 1/44, 34
-dark_g34_e44_r2, 2, 1/44, 34
-dark_g34_e44_r3, 3, 1/44, 34
-dark_g34_e60_r1, 1, 1/60, 34
-dark_g34_e60_r2, 2, 1/60, 34
-dark_g34_e60_r3, 3, 1/60, 34
-dark_g34_e83_r1, 1, 1/83, 34
-dark_g34_e83_r2, 2, 1/83, 34
-dark_g34_e83_r3, 3, 1/83, 34
-dark_g43_e30_r1, 1, 1/30, 43
-dark_g43_e30_r2, 2, 1/30, 43
-dark_g43_e30_r3, 3, 1/30, 43
-dark_g64_e30_r1, 1, 1/30, 64
-dark_g64_e30_r2, 2, 1/30, 64
-dark_g64_e30_r3, 3, 1/30, 64
-dark_g65_e30_r1, 1, 1/30, 65
-dark_g65_e30_r2, 2, 1/30, 65
-dark_g65_e30_r3, 3, 1/30, 65
-dark_g90_e30_r1, 1, 1/30, 90
-dark_g90_e30_r2, 2, 1/30, 90
-dark_g90_e30_r3, 3, 1/30, 90
+dark_g119_e30_r1.bmp,1,33.3,119
+dark_g119_e30_r2.bmp,2,33.3,119
+dark_g119_e30_r3.bmp,3,33.3,119
+dark_g175_e30_r1.bmp,1,33.3,175
+dark_g175_e30_r2.bmp,2,33.3,175
+dark_g175_e30_r3.bmp,3,33.3,175
+dark_g34_e44_r1.bmp,1,22.7,34
+dark_g34_e44_r2.bmp,2,22.7,34
+dark_g34_e44_r3.bmp,3,22.7,34
+dark_g34_e60_r1.bmp,1,16.7,34
+dark_g34_e60_r2.bmp,2,16.7,34
+dark_g34_e60_r3.bmp,3,16.7,34
+dark_g34_e83_r1.bmp,1,12.0,34
+dark_g34_e83_r2.bmp,2,12.0,34
+dark_g34_e83_r3.bmp,3,12.0,34
+dark_g43_e30_r1.bmp,1,33.3,43
+dark_g43_e30_r2.bmp,2,33.3,43
+dark_g43_e30_r3.bmp,3,33.3,43
+dark_g64_e30_r1.bmp,1,33.3,64
+dark_g64_e30_r2.bmp,2,33.3,64
+dark_g64_e30_r3.bmp,3,33.3,64
+dark_g65_e30_r1.bmp,1,33.3,65
+dark_g65_e30_r2.bmp,2,33.3,65
+dark_g65_e30_r3.bmp,3,33.3,65
+dark_g90_e30_r1.bmp,1,33.3,90
+dark_g90_e30_r2.bmp,2,33.3,90
+dark_g90_e30_r3.bmp,3,33.3,90
 
 

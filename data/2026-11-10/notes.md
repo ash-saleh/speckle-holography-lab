@@ -1,3 +1,4 @@
+# Session notes: Tue 10 Nov 2026
 Preliminary experiment: speckle size against spot diameter D. Images listed in `images.csv`, dark frames in `darks.csv`.
 
 ## Fixed for the whole session
