@@ -104,6 +104,8 @@ data/
 
 **`notes.md`** records what stays the same for the whole session: camera model, pixel format, white balance, wavelength λ, block-to-camera distance *L*, and the dark-frame filename, plus free-text observations.
 
+`darks.csv` follows a similar structure as outline above but for dark frames for each gain/exposure combination used to record data
+
 Records for each lab week are added on a branch named for that week (e.g. `week2`) and merged once checked.
 
 ## Camera notes
