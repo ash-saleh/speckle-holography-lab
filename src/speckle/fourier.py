@@ -11,6 +11,16 @@ def fourier_magnitude(image: np.ndarray) -> np.ndarray:
     return np.fft.fftshift(image_magnitude)
 
 
+def power_spectrum(image: np.ndarray) -> np.ndarray:
+    """Takes a 2D image and returns the modulus square of its Fourier transform with zero frequency at the centre, the same shape as the input"""
+    if image.ndim != 2:
+        raise ValueError(f"expected a 2D array, got {image.shape}")
+    image_minus_mean = image - np.mean(image)
+    image_c_transform = np.fft.fft2(image_minus_mean)
+    image_magnitude_sq = np.abs(image_c_transform) ** 2
+    return np.fft.fftshift(image_magnitude_sq)
+
+
 def frequency_axes(
     shape: tuple[int, int], pixel_pitch: float = 1.0
 ) -> tuple[np.ndarray, np.ndarray]:

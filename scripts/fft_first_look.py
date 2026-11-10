@@ -2,11 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import LogNorm
 
-from speckle.fourier import find_edge, fourier_magnitude, frequency_axes, radial_average
+from speckle.fourier import (
+    find_edge,
+    fourier_magnitude,
+    frequency_axes,
+    power_spectrum,
+    radial_average,
+)
 from speckle.image_io import load_gray
 
 image = load_gray("data/test2.bmp")
-image_ft = fourier_magnitude(image)
+image_ft = power_spectrum(image)
 freq_x, freq_y = frequency_axes(image_ft.shape)
 vmin = np.percentile(image_ft, 1)
 
