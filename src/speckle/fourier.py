@@ -94,3 +94,12 @@ def find_edge(
     dist_in_range = distances[in_range]
     steepest_drop = np.argmin(grad_in_range)
     return dist_in_range[steepest_drop]
+
+
+def measure_edge(image: np.ndarray) -> float:
+    """Takes a 2D image array, computes the modulus squared of its FT (and shifts it) as well as the frequency axes to correctly label the FT points and then finds the radial average and computes the edge of the illuminated spot"""
+    image_mag_sq = power_spectrum(image)
+    freq_x, freq_y = frequency_axes(image.shape)
+    distances, averages = radial_average(image_mag_sq, freq_x, freq_y)
+    edge = find_edge(distances, averages, r_min=0.01, r_max=0.5)
+    return edge
