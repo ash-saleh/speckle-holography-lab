@@ -41,4 +41,4 @@ ax.legend()
 
 print(find_edge(distances, averages))
 
-# plt.show()
+plt.show()
