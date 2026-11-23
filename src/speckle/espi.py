@@ -7,5 +7,5 @@ def difference_image(before, after) -> np.ndarray:
     if before.ndim != 2:
         raise ValueError(f"expected a 2D array, got {before.shape}")
     if after.ndim != 2:
-        raise ValueError(f"expected a 2D array, got {before.shape}")
+        raise ValueError(f"expected a 2D array, got {after.shape}")
     return np.abs(after - before)
