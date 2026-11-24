@@ -1,1 +1,9 @@
 filename,reference,surface,knob,pointer_mm,pressure,exposure_ms,gain,notes
+scale.bmp,,test,,,,[exp],[gain],ruler at B's position for mm per pixel
+s1_base_a.bmp,,test,H,0,,[exp],[gain],baseline; slack taken up
+s1_base_b.bmp,s1_base_a.bmp,test,H,0,,1/250, 34,control: nothing touched
+s1_x05.bmp,s1_base_a.bmp,test,H,5,,[exp],[gain],
+s1_x10.bmp,s1_base_a.bmp,test,H,10,,[exp],[gain],
+s1_x15.bmp,s1_base_a.bmp,test,H,15,,[exp],[gain],
+s1_x20.bmp,s1_base_a.bmp,test,H,20,,[exp],[gain],
+s1_x25.bmp,s1_base_a.bmp,test,H,25,,[exp],[gain],
